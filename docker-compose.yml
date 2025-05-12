@@ -1,0 +1,30 @@
+version: "3.8"
+services:
+  frontend:
+    build: ./music-service-frontend
+    ports:
+      - "80:80"
+    depends_on:
+      - backend
+  backend:
+    build: ./music-service-backend
+    ports:
+      - "8080:8080"
+    depends_on:
+      - db
+    environment:
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/musicdb
+      - SPRING_DATASOURCE_USERNAME=admin
+      - SPRING_DATASOURCE_PASSWORD=password
+  db:
+    image: postgres:15
+    ports:
+      - "5432:5432"
+    environment:
+      - POSTGRES_USER=admin
+      - POSTGRES_PASSWORD=password
+      - POSTGRES_DB=musicdb
+    volumes:
+      - db-data:/var/lib/postgresql/data
+volumes:
+  db-data:

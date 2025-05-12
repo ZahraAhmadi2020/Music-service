@@ -1,0 +1,26 @@
+ 
+.news-container {
+  position: relative;
+  min-height: 100vh;
+}
+
+.news-content {
+  position: relative;
+  z-index: 10;
+  padding: 1.5rem;
+  padding-top: 5rem; /* Header height */
+  box-shadow: 0 0 10px rgba(75, 0, 130, 0.3); /* Fog effect */
+}
+
+.news-title {
+  color: #4B0082;
+  font-size: 2.25rem;
+  font-weight: bold;
+  margin-bottom: 2rem;
+}
+
+.news-text {
+  color: #E6E6FA;
+  font-size: 1rem;
+}
+ 

@@ -1,0 +1,31 @@
+ /* src/App.css */
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  /* background-color: #0A0A0F; */
+}
+
+.app-main {
+  flex: 1;
+  padding-top: 4rem; /* Header height */
+  margin-left: 60px; /* Sidebar width */
+  transition: margin-left 0.3s ease;
+}
+
+.app-container:hover .app-main {
+  margin-left: 240px;
+}
+
+@media (max-width: 767px) {
+  .app-main {
+    margin-left: 0;
+  }
+}
+
+.page-content {
+  padding: 1.5rem;
+  color: #E6E6FA;
+  font-size: 1.25rem;
+}
+ 
