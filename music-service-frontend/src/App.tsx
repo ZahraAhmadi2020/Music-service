@@ -5,6 +5,7 @@ import ErrorBoundary from "./src/components/ErrorBoundary";
 import Header from "./src/components/Header";
 import Sidebar from "./src/components/Sidebar";
 import Dashboard from "./src/pages/Dashboard";
+import Login from "./src/pages/Login";
 import News from "./src/pages/News";
 import SignUp from "./src/pages/SignUp";
 
@@ -48,7 +49,8 @@ function App() {
               <Route path="/reviews" element={<Reviews />} />
               <Route path="/releases-1" element={<Releases1 />} />
               <Route path="/releases-2" element={<Releases2 />} /> */}
-              <Route path="/signup" element={<SignUp />} />
+                <Route path="/signup" element={<SignUp />} />
+                <Route path="/login" element={<Login />} />
             </Routes>
           </ErrorBoundary>
         </main>

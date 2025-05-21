@@ -1,0 +1,201 @@
+/* src/styles/Dashboard.css */
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap');
+
+.font-noto {
+  font-family: 'Noto Sans', sans-serif;
+}
+
+.neon-effect {
+  position: relative;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.neon-effect::before {
+  content: '';
+  position: absolute;
+  top: -50%;
+  left: -50%;
+  width: 200%;
+  height: 200%;
+  background: linear-gradient(
+    to right,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  transform: rotate(45deg);
+  animation: neonGlow 3s infinite linear;
+}
+
+@keyframes neonGlow {
+  0% {
+    transform: translateX(-100%) rotate(45deg);
+  }
+  100% {
+    transform: translateX(100%) rotate(45deg);
+  }
+}
+
+/* انیمیشن‌های بوردر برای کارت‌های دایره‌ای */
+.circle-card {
+  position: relative;
+  transition: transform 0.3s ease;
+  border-radius: 50%;
+}
+
+.circle-card:hover {
+  transform: scale(1.1); /* بزرگ‌تر شدن موقع هاور */
+}
+
+.border-animation-1 {
+  border: 3px solid transparent;
+  animation: borderGlow1 3s infinite linear;
+}
+
+.border-animation-2 {
+  border: 3px solid transparent;
+  animation: borderGlow2 3s infinite linear;
+}
+
+.border-animation-3 {
+  border: 3px solid transparent;
+  animation: borderGlow3 3s infinite linear;
+}
+
+.border-animation-4 {
+  border: 3px solid transparent;
+  animation: borderGlow4 3s infinite linear;
+}
+.border-animation-5 {
+  border: 3px solid transparent;
+  animation: borderGlow5 3s infinite linear;
+}
+.border-animation-6 {
+  border: 3px solid transparent;
+  animation: borderGlow6 3s infinite linear;
+}
+.border-animation-7 {
+  border: 3px solid transparent;
+  animation: borderGlow7 3s infinite linear;
+}
+.border-animation-8 {
+  border: 3px solid transparent;
+  animation: borderGlow8 3s infinite linear;
+}
+
+@keyframes borderGlow1 {
+  0% {
+    border-color: #ff4d4d; /* قرمز */
+    box-shadow: 0 0 10px #ff4d4d;
+  }
+  50% {
+    border-color: #ff9999;
+    box-shadow: 0 0 20px #ff9999;
+  }
+  100% {
+    border-color: #ff4d4d;
+    box-shadow: 0 0 10px #ff4d4d;
+  }
+}
+
+@keyframes borderGlow2 {
+  0% {
+    border-color: #4da8ff; /* آبی */
+    box-shadow: 0 0 10px #4da8ff;
+  }
+  50% {
+    border-color: #99ccff;
+    box-shadow: 0 0 20px #99ccff;
+  }
+  100% {
+    border-color: #4da8ff;
+    box-shadow: 0 0 10px #4da8ff;
+  }
+}
+
+@keyframes borderGlow3 {
+  0% {
+    border-color: #4dff4d; /* سبز */
+    box-shadow: 0 0 10px #4dff4d;
+  }
+  50% {
+    border-color: #99ff99;
+    box-shadow: 0 0 20px #99ff99;
+  }
+  100% {
+    border-color: #4dff4d;
+    box-shadow: 0 0 10px #4dff4d;
+  }
+}
+
+@keyframes borderGlow4 {
+  0% {
+    border-color: #ffeb3b; /* زرد */
+    box-shadow: 0 0 10px #ffeb3b;
+  }
+  50% {
+    border-color: #fff59d;
+    box-shadow: 0 0 20px #fff59d;
+  }
+  100% {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 10px #ffeb3b;
+  }
+}
+@keyframes borderGlow5 {
+  0% {
+    border-color: #ffeb3b; /* زرد */
+    box-shadow: 0 0 10px #ffeb3b;
+  }
+  50% {
+    border-color: #fff59d;
+    box-shadow: 0 0 20px #fff59d;
+  }
+  100% {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 10px #ffeb3b;
+  }
+}
+@keyframes borderGlow6 {
+  0% {
+    border-color: #0bf0e1; /* زرد */
+    box-shadow: 0 0 10px #0bf0e1;
+  }
+  50% {
+    border-color: #fff59d;
+    box-shadow: 0 0 20px #fff59d;
+  }
+  100% {
+    border-color: #1ad86f;
+    box-shadow: 0 0 10px #1ad86f;
+  }
+}
+@keyframes borderGlow7 {
+  0% {
+    border-color: #ffeb3b; /* زرد */
+    box-shadow: 0 0 10px #ffeb3b;
+  }
+  50% {
+    border-color: #fff59d;
+    box-shadow: 0 0 20px #fff59d;
+  }
+  100% {
+    border-color: #ffeb3b;
+    box-shadow: 0 0 10px #ffeb3b;
+  }
+}
+@keyframes borderGlow8 {
+  0% {
+    border-color: #ff3bbe; /* زرد */
+    box-shadow: 0 0 10px #ff3bbe;
+  }
+  50% {
+    border-color: #fff59d;
+    box-shadow: 0 0 20px #fff59d;
+  }
+  100% {
+    border-color: #1eeae3;
+    box-shadow: 0 0 10px #1eeae3;
+  }
+}
